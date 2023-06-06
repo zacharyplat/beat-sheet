@@ -100,7 +100,7 @@ const EditBeatOverlay = (props: BeatOverlayProps) => {
               type="text"
               name="input"
               onChange={(e) => handleInputChange(input, e.target.value)}
-              value={editBeat[input]}
+              value={editBeat[input as keyof typeof editBeat]}
             />
             <span className={styles.placeholder}>{input}</span>
           </label>

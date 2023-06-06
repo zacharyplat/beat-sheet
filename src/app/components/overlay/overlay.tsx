@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import "./Overlay.css";
+import "./overlay.css";
 
 type Props = {
   isOpen?: boolean;
